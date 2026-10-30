@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gambit"
+version = "1.0.0"
+description = "Learn chess openings in the terminal"
+requires-python = ">=3.11"
+dependencies = ["chess", "textual"]
+
+[project.optional-dependencies]
+dev = ["pytest", "pytest-asyncio"]
+
+[project.scripts]
+gambit = "gambit.__main__:main"
+
+[tool.setuptools]
+packages = ["gambit"]
+
+[tool.setuptools.package-data]
+gambit = ["data/*.tsv"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "strict"
+testpaths = ["tests"]

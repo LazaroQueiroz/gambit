@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Virtual environments
+.venv/
+
+# Tool caches
+.pytest_cache/
+
+# Stockfish, fetched by setup-engine.sh
+engine/
