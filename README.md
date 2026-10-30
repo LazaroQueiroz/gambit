@@ -94,6 +94,10 @@ Run the tests with:
 
 See [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) for how the code fits together.
 
+## License
+
+gambit is free software under the [GNU General Public License v3.0 or later](LICENSE).
+
 ## Credits
 
 - Opening names and moves come from the [Lichess chess-openings](https://github.com/lichess-org/chess-openings) dataset (CC0).
